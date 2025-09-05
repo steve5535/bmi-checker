@@ -9,4 +9,4 @@ elif 18.5 <= bmi < 22.9:
 elif 23 < bmi < 24.9:
     print(f'당신의 BMI(체질량)지수는 {bmi}이고 과체중 입니다.')
 else:
-        print(f'당신의 BMI(체질량)지수는 {bmi}이고 비만 입니다.')
+    print(f'당신의 BMI(체질량)지수는 {bmi}이고 비만 입니다.')
