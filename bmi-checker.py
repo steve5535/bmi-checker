@@ -1,3 +1,5 @@
+name = input('이름을 입력해주세요 : ')
+print(f'안녕하세요 {name}님')
 weight=int(input('몸무게를 입력해주세요(kg) : '))
 height=int(input('키를 입력해주세요(cm) : '))
 bmi=round(weight/((height/100)**2),1)
