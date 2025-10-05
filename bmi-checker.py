@@ -1,7 +1,19 @@
 name = input('이름을 입력해주세요 : ')
 print(f'안녕하세요 {name}님')
-weight=int(input('몸무게를 입력해주세요(kg) : '))
-height=int(input('키를 입력해주세요(cm) : '))
+while True:
+    try:
+        weight=float(input('몸무게를 입력해주세요(kg) : '))
+        height=float(input('키를 입력해주세요(cm) : '))
+
+        if weight<=0 or height<=0:
+            print('몸무게와 키는 0보다 큰 수를 입력하요')
+            continue
+        break
+
+    except ValueError:
+        print('몸무게와 키는 숫자로 입력해주세요.')
+        continue
+
 bmi=round(weight/((height/100)**2),1)
 print(weight,height)
 if bmi < 18.5:
